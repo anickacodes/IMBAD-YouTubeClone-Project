@@ -61,3 +61,4 @@ Allow for videos to be "favorited." Favorited videos should be displayed on thei
 Track which Show pages have been visited and create a History page that shows all previously viewed videos.
 
 Implement LocalStorage to persist data, so that the data does not disappear upon refreshing.
+

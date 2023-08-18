@@ -17,8 +17,9 @@ function App() {
       </div>
     
       {/* fetch(
-  `https://youtube.googleapis.com/youtube/v3/search?key=${process.env.YOUTUBE_APP_API_KEY}`
+  `https://youtube.googleapis.com/youtube/v3/search?key=${import.meta.env.YOUTUBE_APP_API_KEY}`
 ); */}
+
     </>
   )
 }

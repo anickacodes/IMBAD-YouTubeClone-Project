@@ -1,22 +1,32 @@
  #container {
-    border: 2px solid white;
+     border: 2px solid white;
+     background-color: rgba(237, 8, 8, 0.75);
+     height: 100%;
+     width: 100%;
  }
 
- #container, #start, #guide-icon, .yt-spec-icon-shape {
-    display: flex;
+ #container,
+ #start,
+ #guide-icon,
+ .yt-spec-icon-shape,
+ #logo,
+ #logo-icon {
+     display: flex;
+ }
+
+ #back-button-tooltip.ytd-masthead {
+     display: none;
  }
 
  .iconShape-div-in-nav {
-    width:100%;
-    height: 100%;
-    fill: currentColor;
+     width: 100%;
+     height: 100%;
+     fill: currentColor;
  }
 
  svg {
-    pointer-events: none;
-    display: block;
-    width: 100% ;
-    height: 100%
+     pointer-events: none;
+     display: block;
+     width: 100%;
+     height: 100%
  }
-
- 

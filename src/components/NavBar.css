@@ -3,6 +3,8 @@
      background-color: rgba(237, 8, 8, 0.75);
      height: 100%;
      width: 100%;
+     /* align-items: center; */
+     justify-content: space-between;
  }
 
  #container,
@@ -12,10 +14,11 @@
  #logo,
  #logo-icon {
      display: flex;
+     
  }
 
  #back-button-tooltip.ytd-masthead {
-     display: none;
+     /* display: none; */
  }
 
  .iconShape-div-in-nav {

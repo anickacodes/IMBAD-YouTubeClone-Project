@@ -1,6 +1,4 @@
 import { useState, useEffect } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import NavBar from "./components/NavBar";
 // import YouTubeAPIComponent from "./components/YouTubeAPIComponent";
@@ -11,6 +9,7 @@ function App() {
 
   return (
     <>
+    {/* add to all pages */}
    <NavBar />
       <div></div>
       <h1>IMBAD </h1>

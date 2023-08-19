@@ -1,8 +1,10 @@
 import { Route, Routes, Link } from "react-router-dom";
 import ".//NavBar.css";
+import logo from "../assets/ytlogoglittered.jpeg"
 
 const NavBar = () => {
   return (
+    <>
     <div id="container" className="style-scope ytd-masthead">
       <div id="start" className="style-scope ytd-masthead">
         {/* <yt-icon-button id="back-button" className="style-scope ytd-masthead">
@@ -140,9 +142,25 @@ const NavBar = () => {
       </div>
     </div>
 
-    // <label> YouTube
-    // <input type="text" />
-    // </label>
+    <nav className="navbar navbar-light bg-light">
+
+
+                          
+<a className="navbar-brand" href="#">
+    <img src={logo} width={90} height={77} id="logo-icon" alt="" />
+  YouTube 
+  </a>
+</nav>
+  <input type="text" placeholder="Search Bar Goes Here" />
+  
+
+
+
+
+
+
+
+</>
   );
 };
 

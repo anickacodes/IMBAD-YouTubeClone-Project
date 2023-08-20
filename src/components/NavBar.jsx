@@ -4,18 +4,20 @@ import logo from "../assets/ytlogoglittered.jpeg";
 
 const NavBar = () => {
   return (
-    <>
-      <div id="container" className="">
-        <nav className="navbar navbar-light bg-light">
-          <Link to={''} >
-       
-            <img src={logo} width={90} height={77} id="logo-icon" alt="" />
-            {/* YouTube */}
-            </Link>
-          <Link to={"/"}>Home</Link>
-        </nav>
-      </div>
-    </>
+    <div className="container" >
+    <nav >
+      <Link to={"/"} className="site-title"> <img src={logo} id="logo" width={70}/> YouTube </Link>
+      <ul>
+     
+        <li className="active">
+            <Link to={'/home'}>Home</Link>
+        </li>
+        <li className="active">
+            <Link to={'/About'}>About</Link>
+        </li>
+      </ul>
+    </nav>
+    </div>
   );
 };
 

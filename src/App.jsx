@@ -10,11 +10,14 @@ function App() {
   return (
     <>
     {/* add to all pages */}
+    <header>
    <NavBar />
+   </header>
       <div></div>
       <h1>IMBAD </h1>
-      <div className="card">
+      <div className="card videos">
         <div>
+          <h4>videos section</h4>
           {/* <YouTubeAPIComponent /> */}
         </div>
       </div>

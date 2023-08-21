@@ -1,82 +1,42 @@
 import { Route, Routes, Link } from "react-router-dom";
 import ".//NavBar.css";
+import logo from "../assets/ytlogoglittered.jpeg";
 
 const NavBar = () => {
   return (
-    <div id="container" className="style-scope ytd-masthead">
-      <div id="start" className="style-scope ytd-masthead">
-        <yt-icon-button id="back-button" className="style-scope ytd-masthead">
-          <button
-            id="button"
-            className="style-scope ytd-masthead"
-            aria-label="Back"
-          >
-            <yt-interaction
-              id="interaction"
-              className="circular style-scope yt-icon-button"
-            >
-              <div className="stroke style-scope yt-interaction"></div>
-              <div className="fill style-scope yt-interaction"></div>
-            </yt-interaction>
-          </button>
-        </yt-icon-button>
+    <div className="container">
+      <nav>
+        <div id="logo-link">
+          <Link to={"/"} className="site-title">
+            {" "}
+            <img src={logo} id="logo" width={70} /> YouTube{" "}
+          </Link>
+        </div>
 
-        <tp-yt-paper-tooltip
-          id="back-button-tooltip"
-          htmlFor="back-button"
-          className="style-scope ytd-masthead"
-          disable-upgrade
-        >
+        <div className="nav-links">
           {" "}
-          Back{" "}
-        </tp-yt-paper-tooltip>
-
-        <yt-icon-button
-          id="guide-button"
-          toggeable="true"
-          className="style-scope ytd-masthead"
-        >
-          <button
-            id="button"
-            className="style-scope yt-icon-button"
-            aria-label="Guide"
-            aria-pressed="false"
-          >
-            <yt-icon
-              id="guide-icon"
-              icon="yt-icons:menu"
-              className="style-scope ytd-masthead"
-            >
-              <yt-icon-shape className="style-scope yt-icon">
-                <icon-shape className="yt-spec-icon-shape">
-                  <div className="svg-holder-icon">
-                    <svg
-                      height={24}
-                      viewBox="0 0 24 24"
-                      width={24}
-                      focusable="false"
-                    >
-                      <path d="M21 6H3V5h18v1zm0 5H3v1h18v-1zm0 6H3v1h18v-1z"></path>
-                    </svg>
-                  </div>
-                </icon-shape>
-              </yt-icon-shape>
-            </yt-icon>
+          <ul>
+            <li className="active">
+              <Link to={"/home"}>Home</Link>
+              {/* should render fresh viideos */}
+            </li>
+            <li className="active">
+              <Link to={"/About"}>About</Link>
+              {/* should  */}
+            </li>
+          </ul>
+        </div>
+        <div className="">
+          <button className="button">
+            <div className="button-container">
+                <img al/>
+              {/* <div className="top_left">top-left</div> */}
+              {/* <div className="top_right">top-right</div> */}
+            </div>
           </button>
-          <yt-interaction id="interaction" className="circular style-scope yt-icon-button">
-            <div className="stroke style-scope yyt-interaction"></div>
-            <div className="fill style-scope yyt-interaction"></div>
-          </yt-interaction>
-
-        </yt-icon-button>
-
-        {/* add another ytd-topbar-logo-renderer */}
-      </div>
+        </div>
+      </nav>
     </div>
-
-    // <label> YouTube
-    // <input type="text" />
-    // </label>
   );
 };
 

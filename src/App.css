@@ -1,22 +1,17 @@
 #root {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   margin: 0 auto;
-  padding: 2rem;
+  /* padding: 2rem; */
   text-align: center;
  
 }
-
 
 
 header {
   display: flexbox;
   border: 2px solid white;
   background-color: rgba(237, 8, 8, 0.75);
-  
-
 }
-
-
 
 
 @keyframes logo-spin {

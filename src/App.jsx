@@ -1,10 +1,14 @@
+
 import { useState, useEffect } from "react";
 import "./App.css";
 import NavBar from "./components/NavBar";
 // import YouTubeAPIComponent from "./components/YouTubeAPIComponent";
 
+
 function App() {
   return (
+
+
     <>
       {/* add to all pages */}
       <header>
@@ -12,6 +16,7 @@ function App() {
       </header>
 
       <div> <h1>IMBAD </h1></div>
+
      
       <div className="card videos">
         <div>
@@ -19,8 +24,13 @@ function App() {
           {/* <YouTubeAPIComponent /> */}
         </div>
       </div>
+
+  
+  )
+
     </>
   );
+
 }
 
 export default App;

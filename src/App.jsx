@@ -1,18 +1,38 @@
-import React from 'react'
-import './App.css'
-import Header from './Header'
+
+import { useState, useEffect } from "react";
+import "./App.css";
+import NavBar from "./components/NavBar";
+// import YouTubeAPIComponent from "./components/YouTubeAPIComponent";
+
 
 function App() {
-  // const [count, setCount] = useState(0)
-
   return (
 
-      <div className="App">
-        <Header />
+
+    <>
+      {/* add to all pages */}
+      <header>
+        <NavBar />
+      </header>
+
+      <div> <h1>IMBAD </h1></div>
+
      
+      <div className="card videos">
+        <div>
+          <h4>videos section</h4>
+          {/* <YouTubeAPIComponent /> */}
+        </div>
       </div>
+
   
   )
+
+    </>
+  );
+
 }
 
-export default App
+export default App;
+
+//hey

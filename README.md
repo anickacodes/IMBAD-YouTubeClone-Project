@@ -25,7 +25,7 @@ A [`Home page`] should exist, which includes a search bar and prompts the user t
 
 An [`About page`] should exist, which should include information about who worked on the application and links to their GitHub profiles.
 
-A [`navbar`] should appear on every page that includes links to the Home page and the About page.
+A [`navbar`] should appear on every page that includes links to the Home page and the About page. 
 
 Upon using the Home page's search bar, the user should be presented with the first 8 videos that return from the YouTube API. A thumbnail from the video should be shown as well as the title of the video.
 
@@ -61,3 +61,7 @@ Allow for videos to be "favorited." Favorited videos should be displayed on thei
 Track which Show pages have been visited and create a History page that shows all previously viewed videos.
 
 Implement LocalStorage to persist data, so that the data does not disappear upon refreshing.
+
+
+
+Netlify Link [https://imbad-youtube-clone.netlify.app/] 

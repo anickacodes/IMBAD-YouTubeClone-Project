@@ -14,10 +14,9 @@ const AboutPage = () => {
         <p>
 
         </p>
-
 			<h2>MARCIA</h2>
 			<p>
-				Marcia is a driven home-based bakery owner who's passionate about
+				Marcia is a driven home -based bakery owner who's passionate about
 				creating custom cakes and treats. As a Pursuit fellow on the path to
 				full-stack software development, she merges her love for crafting from
 				scratch with her desire of learning to code. Marcia enjoys traveling,

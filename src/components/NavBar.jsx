@@ -1,6 +1,7 @@
 import { Route, Routes, Link } from "react-router-dom";
 import ".//NavBar.css";
 import logo from "../assets/ytlogoglittered.jpeg";
+import AboutPage from "../components/AboutPage.jsx"
 
 const NavBar = () => {
   return (
@@ -21,7 +22,7 @@ const NavBar = () => {
               {/* should render fresh viideos */}
             </li>
             <li className="active">
-              <Link to={"/About"}>About</Link>
+              <Link to={"/AboutPage"}>About</Link>
               {/* should  */}
             </li>
           </ul>

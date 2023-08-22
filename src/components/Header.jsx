@@ -14,7 +14,7 @@ function Header() {
           >
             <g class="style-scoop yt-icon">
             <path d="M21 6H3V5h18v1zm0 5H3v1h18v-1zm0 6H3v1h18v-1z"
-                class="style-scoope yt-icon"
+                class="style-scope yt-icon"
             ></path>
              </g>
           </svg>

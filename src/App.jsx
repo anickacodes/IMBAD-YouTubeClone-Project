@@ -1,25 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React from 'react'
 import './App.css'
+import Header from './Header'
 
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-      
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
+
+      <div className="App">
+        <Header />
      
       </div>
-    
-      {/* fetch(
-  `https://youtube.googleapis.com/youtube/v3/search?key=${process.env.YOUTUBE_APP_API_KEY}`
-); */}
-    </>
+ 
   )
 }
 

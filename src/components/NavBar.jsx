@@ -1,6 +1,7 @@
 import { Route, Routes, Link } from "react-router-dom";
 import ".//NavBar.css";
 import logo from "../assets/ytlogoglittered-removebg-preview.png";
+import notificationIcon from "../assets/ytclone-icon-notification.png"
 import AboutPage from "../components/AboutPage.jsx"
 
 const NavBar = () => {
@@ -22,19 +23,22 @@ const NavBar = () => {
               {/* should render fresh videos */}
             </li>
             <li className="active">
-              <Link to={"/AboutPage"}>About</Link>
+              <Link to={<AboutPage />}>About</Link>
               {/* should  */}
             </li>
           </ul>
         </div>
-        <div className="">
+        <div id="nav-end">
+        <div className="button-container">
+          <div className="render-button">
           <button className="button">
-            <div className="button-container">
-                <img al/>
-              {/* <div className="top_left">top-left</div> */}
-              {/* <div className="top_right">top-right</div> */}
-            </div>
+          
+                <img src={notificationIcon} id="notification-icon" width={30} alt="black and white notification bell"/>
+                {/* add a hover effect  */}
+       
           </button>
+          </div>
+          </div>
         </div>
       </nav>
     </div>

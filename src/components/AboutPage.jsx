@@ -8,7 +8,7 @@ const AboutPage = () => {
 				IMBAD "I'M BAD" is a team of five talented and determined women who are
 				Pursuit fellows, training to become full-stack software developers.
 				Together we are utilizing the React skills we have learned thus far to
-				create a "Youtube Clone" application. YouTube API, we're crafting a
+				create a "Youtube Clone" application. Using YouTube's API, we're crafting a
 				platform that allows users to seamlessly explore, search, and play
 				YouTube videos directly on our application. As we navigate the
 				intricacies of integrating APIs and refining user interfaces, we're

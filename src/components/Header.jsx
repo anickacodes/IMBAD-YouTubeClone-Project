@@ -15,20 +15,11 @@ function Header() {
             class="style-scope yt-icon pointer"
             style={{ width: "30px", height: "30px" }}
           >
-<<<<<<< HEAD:src/components/Header.jsx
             <g class="style-scoop yt-icon">
             <path d="M21 6H3V5h18v1zm0 5H3v1h18v-1zm0 6H3v1h18v-1z"
                 class="style-scope yt-icon"
             ></path>
              </g>
-=======
-            <g class="style-scope yt-icon">
-              <path
-                d="M21,6H3V5h18V6z M21,11H3v1h18V11z M21,17H3v1h18V17z"
-                class="style-scope yt-icon"
-              ></path>
-            </g>
->>>>>>> e3f46f3 (header done):src/Header.jsx
           </svg>
         </div>
         <div className="logo">

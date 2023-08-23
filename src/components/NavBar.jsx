@@ -28,10 +28,9 @@ const NavBar = () => {
             </li>
 
             <li className="active">
-              <Link to={'/Videos'}> Videos</Link>
-              {/* should  */}
+              <Link to={'/Videos'}> Videos </Link>
+              {/* should possibly link to show page */}
             </li>
-
           </ul>
         </div>
         <div id="nav-end">

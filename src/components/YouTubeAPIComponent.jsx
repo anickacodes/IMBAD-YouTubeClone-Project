@@ -4,11 +4,13 @@ import SearchBar from "../components/SearchBar"
 
 function YouTubeAPIComponent() {
   const [videos, setVideos] = useState([]);
-  // const [videosToRender, setVideoToRender] = useState([]);
+  const [videosToRender, setVideoToRender] = useState([]);
 
   useEffect(() => {
     const API_KEY = `${import.meta.env.VITE_REACT_APP_API_KEY}`;
+    
     const API_URL = `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&part=snippet&q=beyonce`
+    console.log("APIurl", API_URL)
 
     fetch(API_URL)
       .then((response) => {
@@ -28,11 +30,13 @@ function YouTubeAPIComponent() {
   }, []);
 
   function handleSearch(searchQuery) {
-    console.log(searchQuery)
+    console.log("searched", searchQuery)
     const API_KEY = `${import.meta.env.VITE_REACT_APP_API_KEY}`;
+    console.log("search api", API_KEY)
     const searchURL = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=${encodeURIComponent(
       searchQuery
     )}&type=video&maxResults=8&key=${API_KEY}`;
+    console.log("searched url", searchURL)
     fetch(searchURL)
       .then((response) => response.json())
       .then((data) => {
@@ -47,7 +51,7 @@ function YouTubeAPIComponent() {
 
   return (
     <div>
-      <h3>YouTube Videos</h3>
+      <h1>YouTube Videos</h1>
       <SearchBar onSearch={handleSearch} />
       {/* <VideosList
         videos={videosToRender.length > 0 ? videosToRender : videos}

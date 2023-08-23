@@ -26,7 +26,7 @@ const [searchQuery, setSearchQuery] = useState('')
           </button>
       
       </form>
-      <hr />
+   
       </>
     );
   };

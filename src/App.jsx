@@ -5,6 +5,7 @@ import AboutPage from './components/AboutPage';
 import { Route, Routes } from 'react-router-dom';
 import YouTubeAPIComponent from './components/YouTubeAPIComponent';
 
+
 function App() {
 	return (
 		<>
@@ -12,7 +13,6 @@ function App() {
 			<header>
 				<NavBar />
 			</header>
-
 			<div>
 				{' '}
 				<h1>IMBAD</h1>

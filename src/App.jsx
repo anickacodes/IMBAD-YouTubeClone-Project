@@ -20,7 +20,7 @@ function App() {
       <Routes>
         <Route path="/home" element={<h1>Home</h1>} />
         <Route path="/AboutPage" element={ <AboutPage />} />
-        <Route path="/Videos" element={ <div> Videos Section <YouTubeAPIComponent /> </div>} />
+        <Route path="/Videos" element={  <YouTubeAPIComponent /> } />
       
       </Routes>
 			<div className="card videos">

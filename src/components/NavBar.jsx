@@ -26,6 +26,12 @@ const NavBar = () => {
               <Link to={'/AboutPage'}> About </Link>
               {/* should  */}
             </li>
+
+            <li className="active">
+              <Link to={'/Videos'}> Videos</Link>
+              {/* should  */}
+            </li>
+
           </ul>
         </div>
         <div id="nav-end">

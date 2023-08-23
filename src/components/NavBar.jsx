@@ -1,5 +1,5 @@
 import { Route, Routes, Link } from "react-router-dom";
-import ".//NavBar.css";
+import "./NavBar.css"
 import logo from "../assets/ytlogoglittered-removebg-preview.png";
 import notificationIcon from "../assets/ytclone-icon-notification.png"
 import AboutPage from "../components/AboutPage.jsx"
@@ -23,7 +23,7 @@ const NavBar = () => {
               {/* should render fresh videos */}
             </li>
             <li className="active">
-              <Link to={<AboutPage />}>About</Link>
+              <Link to={'/AboutPage'}> About </Link>
               {/* should  */}
             </li>
           </ul>

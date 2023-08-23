@@ -4,6 +4,7 @@ import NavBar from './components/NavBar';
 import AboutPage from './components/AboutPage';
 // import YouTubeAPIComponent from "./components/YouTubeAPIComponent";
 import { Route, Routes } from 'react-router-dom';
+import YouTubeAPIComponent from './components/YouTubeAPIComponent';
 
 function App() {
 	return (
@@ -20,7 +21,7 @@ function App() {
       <Routes>
         <Route path="/home" element={<h1>Home</h1>} />
         <Route path="/AboutPage" element={ <AboutPage />} />
-        <Route path="/Videos" element={ <></>} />
+        <Route path="/Videos" element={ <YouTubeAPIComponent />} />
       
       </Routes>
 			<div className="card videos">

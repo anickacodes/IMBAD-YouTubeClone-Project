@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import './App.css';
 import NavBar from './components/NavBar';
 import AboutPage from './components/AboutPage';
-// import YouTubeAPIComponent from "./components/YouTubeAPIComponent";
 import { Route, Routes } from 'react-router-dom';
 import YouTubeAPIComponent from './components/YouTubeAPIComponent';
 
@@ -21,12 +20,12 @@ function App() {
       <Routes>
         <Route path="/home" element={<h1>Home</h1>} />
         <Route path="/AboutPage" element={ <AboutPage />} />
-        <Route path="/Videos" element={ <YouTubeAPIComponent />} />
+        <Route path="/Videos" element={ <div> Videos Section <YouTubeAPIComponent /> </div>} />
       
       </Routes>
 			<div className="card videos">
 				<div>
-					<h4>Videos Section PlaceHolder</h4>
+					{/* <h4>Videos Section PlaceHolder</h4> */}
 					{/* <YouTubeAPIComponent /> */}
 				</div>
 			</div>

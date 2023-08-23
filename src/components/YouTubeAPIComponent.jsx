@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from "react";
-
+import SearchBar from "../components/SearchBar"
 
 function YouTubeAPIComponent() {
   const [videos, setVideos] = useState([]);
@@ -27,28 +27,28 @@ function YouTubeAPIComponent() {
       });
   }, []);
 
-  // function handleSearch(searchQuery) {
-  //   console.log(searchQuery)
-  //   const API_KEY = `${import.meta.env.VITE_REACT_APP_API_KEY}`;
-  //   const searchURL = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=${encodeURIComponent(
-  //     searchQuery
-  //   )}&type=video&maxResults=8&key=${API_KEY}`;
-  //   fetch(searchURL)
-  //     .then((response) => response.json())
-  //     .then((data) => {
-  //       setVideos(data.items)
-  //       setVideoToRender(data.items);
-  //       ; // Update the videos state
-  //     })
-  //     .catch((error) => {
-  //       console.error(error);
-  //     });
-  // }
+  function handleSearch(searchQuery) {
+    console.log(searchQuery)
+    const API_KEY = `${import.meta.env.VITE_REACT_APP_API_KEY}`;
+    const searchURL = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=${encodeURIComponent(
+      searchQuery
+    )}&type=video&maxResults=8&key=${API_KEY}`;
+    fetch(searchURL)
+      .then((response) => response.json())
+      .then((data) => {
+        setVideos(data.items)
+        setVideoToRender(data.items);
+        ; // Update the videos state
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  }
 
   return (
     <div>
-      <h1>YouTube Videos</h1>
-      {/* <SearchBar onSearch={handleSearch} /> */}
+      <h3>YouTube Videos</h3>
+      <SearchBar onSearch={handleSearch} />
       {/* <VideosList
         videos={videosToRender.length > 0 ? videosToRender : videos}
       /> */}

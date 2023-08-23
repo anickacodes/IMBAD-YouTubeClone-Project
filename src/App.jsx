@@ -18,13 +18,14 @@ function App() {
 				<h1>IMBAD</h1>
 			</div>
       <Routes>
-        <Route path="/home" element={<h1>Home - Welcome to IMBAD </h1>} />
+        <Route path="/home" element={<h1>Home</h1>} />
         <Route path="/AboutPage" element={ <AboutPage />} />
+        <Route path="/Videos" element={ <></>} />
       
       </Routes>
 			<div className="card videos">
 				<div>
-					<h4>Videos Section</h4>
+					<h4>Videos Section PlaceHolder</h4>
 					{/* <YouTubeAPIComponent /> */}
 				</div>
 			</div>

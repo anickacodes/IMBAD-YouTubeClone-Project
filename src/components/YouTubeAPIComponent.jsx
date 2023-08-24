@@ -10,7 +10,7 @@ function YouTubeAPIComponent({handleSearch}) {
     const API_KEY = `${import.meta.env.VITE_REACT_APP_API_KEY}`;
   
     const API_URL = `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&part=snippet&q=beyonce`
-    // console.log("APIurl", API_URL)
+ 
 
     fetch(API_URL)
       .then((response) => {
@@ -27,12 +27,12 @@ function YouTubeAPIComponent({handleSearch}) {
       .catch((error) => {
         console.error("Error fetching data from YouTube API:", error);
       });
-  }, [setVideoToRender]);
+  }, []);
 
   function handleSearch(searchQuery) {
-    // console.log("searched", searchQuery)
+
     const API_KEY = `${import.meta.env.VITE_REACT_APP_API_KEY}`;
-    // console.log("search api", API_KEY)
+  
     const maxResults = 8;
     const searchURL = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=${encodeURIComponent(
       searchQuery
@@ -43,7 +43,7 @@ function YouTubeAPIComponent({handleSearch}) {
       .then((data) => {
         setVideos(data.items)
         setVideoToRender(data.items);
-        ; // Update the videos state
+      
       })
       .catch((error) => {
         console.error(error);
@@ -54,9 +54,6 @@ function YouTubeAPIComponent({handleSearch}) {
     <div>
       <h1>YouTube Videos</h1>
       <SearchBar onSearch={handleSearch} />
-      {/* <VideosList
-        videos={videosToRender.length > 0 ? videosToRender : videos}
-      /> */}
 
       <ul>
       {videosToRender.length > 0 ? (

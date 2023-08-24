@@ -2,6 +2,7 @@
  #container,
  #logo-link {
      display: flex;
+    
  }
 
  #container  {
@@ -16,7 +17,7 @@ nav {
     display: flex;
     background-color: rgba(37, 11, 237, 0.914);
     color: white;
-    justify-content:space-between;
+  
     align-items: stretch;
     /* gap: rem; */
     padding: 0 .7rem;
@@ -38,10 +39,6 @@ nav li:hover {
 
 img {
    border-radius: 1rem;
-}
-
-nav-end {
-    display: flex;
 }
 
 .button {

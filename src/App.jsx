@@ -37,8 +37,6 @@ function App() {
 
 	return (
 		<>
-		<NavBar />
-					{/* <SearchBar onSearch={handleSearch}/> */}
 
       <Routes>
         <Route path="/" element={ <Home />} />

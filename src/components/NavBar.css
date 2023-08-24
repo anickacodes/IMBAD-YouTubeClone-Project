@@ -1,5 +1,4 @@
 
-
  #container,
  #logo-link {
      display: flex;
@@ -22,8 +21,6 @@ nav {
     align-items: stretch;
     /* gap: rem; */
     padding: 0 .7rem;
-
-    
 }
 
 nav ul {
@@ -49,8 +46,6 @@ img {
     justify-content: space-between;
     background-color: inherit;
 }
-
-
 
 @media (min-width:768px) {
     #container { width: 29% }

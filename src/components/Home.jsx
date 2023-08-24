@@ -1,17 +1,12 @@
-import React from "react"
-import SearchBar from "./SearchBar"
+
 
 const Home = () => {
+  return (
+    <>
+      {/* <NavBar /> */}
 
-return (
-<>
+      {/* <h1>IMBAD</h1> */}
+    </>
+  );
+};
 
-			
-				<h1>IMBAD</h1>
-       
-                </>
-)
-
-}
-
-export default Home

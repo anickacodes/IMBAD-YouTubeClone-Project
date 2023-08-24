@@ -1,5 +1,3 @@
-
-
 import "./Header.css";
 
 //comment
@@ -16,10 +14,11 @@ function Header() {
             style={{ width: "30px", height: "30px" }}
           >
             <g class="style-scoop yt-icon">
-            <path d="M21 6H3V5h18v1zm0 5H3v1h18v-1zm0 6H3v1h18v-1z"
+              <path
+                d="M21 6H3V5h18v1zm0 5H3v1h18v-1zm0 6H3v1h18v-1z"
                 class="style-scope yt-icon"
-            ></path>
-             </g>
+              ></path>
+            </g>
           </svg>
         </div>
         <div className="logo">
@@ -158,10 +157,7 @@ function Header() {
           </svg>
         </div>
         <div className="profile-menu">
-          <div className="profile-img">
-
-        
-          </div>
+          <div className="profile-img"></div>
         </div>
       </div>
     </div>

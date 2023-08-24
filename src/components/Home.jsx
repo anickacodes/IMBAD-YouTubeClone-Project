@@ -1,23 +1,17 @@
-import { useState } from "react";
-import SearchBar from "./SearchBar";
+import { Link } from "react-router-dom";
 
-const Home = () => {
 
-	
+export default function Home() {
 
-  return (
-    <>
-     
-	  <div className="card videos">
-				<div>
-					{/* <h4>Videos Section PlaceHolder</h4> */}
-					<SearchBar onSearch={handleSearch}/>
 
-				</div>
-			</div>
-      {/* <h1>IMBAD</h1> */}
-    </>
-  );
-};
 
-// export default Home
+	return (
+	  <div>
+		<h2>Home</h2>
+		<Link to={'/Videos'}>
+	<input type="text" placeholder="Search Videos Here" /> Search Videos Here
+</Link>
+
+	  </div>
+	);
+  }

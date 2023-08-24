@@ -8,9 +8,9 @@ function YouTubeAPIComponent() {
 
   useEffect(() => {
     const API_KEY = `${import.meta.env.VITE_REACT_APP_API_KEY}`;
-    
+  
     const API_URL = `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&part=snippet&q=beyonce`
-    console.log("APIurl", API_URL)
+    // console.log("APIurl", API_URL)
 
     fetch(API_URL)
       .then((response) => {
@@ -30,12 +30,13 @@ function YouTubeAPIComponent() {
   }, []);
 
   function handleSearch(searchQuery) {
-    console.log("searched", searchQuery)
+    // console.log("searched", searchQuery)
     const API_KEY = `${import.meta.env.VITE_REACT_APP_API_KEY}`;
-    console.log("search api", API_KEY)
+    // console.log("search api", API_KEY)
+    const maxResults = 8;
     const searchURL = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=${encodeURIComponent(
       searchQuery
-    )}&type=video&maxResults=8&key=${API_KEY}`;
+    )}&type=video&maxResults=${maxResults}&key=${API_KEY}`;
     console.log("searched url", searchURL)
     fetch(searchURL)
       .then((response) => response.json())

@@ -1,12 +1,11 @@
-import Header from "./Header"
-import NavBar from "./NavBar"
+import React from "react"
+import SearchBar from "./SearchBar"
 
 const Home = () => {
 
 return (
 <>
 
-				<NavBar />
 			
 				<h1>IMBAD</h1>
        

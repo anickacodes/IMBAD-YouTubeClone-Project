@@ -2,9 +2,9 @@
 import React, { useState, useEffect } from "react";
 import SearchBar from "../components/SearchBar"
 
-function YouTubeAPIComponent() {
-  const [videos, setVideos] = useState([]);
-  const [videosToRender, setVideoToRender] = useState([]);
+function YouTubeAPIComponent({ videos, setVideos, setVideoToRender, handleSearch}) {
+  // const [videos, setVideos] = useState([]);
+  // const [videosToRender, setVideoToRender] = useState([]);
 
   useEffect(() => {
     const API_KEY = `${import.meta.env.VITE_REACT_APP_API_KEY}`;
@@ -29,26 +29,26 @@ function YouTubeAPIComponent() {
       });
   }, []);
 
-  function handleSearch(searchQuery) {
-    // console.log("searched", searchQuery)
-    const API_KEY = `${import.meta.env.VITE_REACT_APP_API_KEY}`;
-    // console.log("search api", API_KEY)
-    const maxResults = 8;
-    const searchURL = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=${encodeURIComponent(
-      searchQuery
-    )}&type=video&maxResults=${maxResults}&key=${API_KEY}`;
-    console.log("searched url", searchURL)
-    fetch(searchURL)
-      .then((response) => response.json())
-      .then((data) => {
-        setVideos(data.items)
-        setVideoToRender(data.items);
-        ; // Update the videos state
-      })
-      .catch((error) => {
-        console.error(error);
-      });
-  }
+  // function handleSearch(searchQuery) {
+  //   // console.log("searched", searchQuery)
+  //   const API_KEY = `${import.meta.env.VITE_REACT_APP_API_KEY}`;
+  //   // console.log("search api", API_KEY)
+  //   const maxResults = 8;
+  //   const searchURL = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=${encodeURIComponent(
+  //     searchQuery
+  //   )}&type=video&maxResults=${maxResults}&key=${API_KEY}`;
+  //   console.log("searched url", searchURL)
+  //   fetch(searchURL)
+  //     .then((response) => response.json())
+  //     .then((data) => {
+  //       setVideos(data.items)
+  //       setVideoToRender(data.items);
+  //       ; // Update the videos state
+  //     })
+  //     .catch((error) => {
+  //       console.error(error);
+  //     });
+  // }
 
   return (
     <div>

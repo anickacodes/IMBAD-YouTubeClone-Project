@@ -1,10 +1,9 @@
-import Header from "./Header";
-import NavBar from "./NavBar";
+
 
 const Home = () => {
   return (
     <>
-      <NavBar />
+      {/* <NavBar /> */}
 
       {/* <h1>IMBAD</h1> */}
     </>

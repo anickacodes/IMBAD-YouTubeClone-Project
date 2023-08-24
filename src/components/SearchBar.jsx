@@ -2,13 +2,9 @@ import { useState } from "react";
 
 
 const SearchBar = ({onSearch}) => {
+  // console.log({onSearch})
 const [searchQuery, setSearchQuery] = useState('')
- 
 
-    // function handleSearchInput(e) {
-    //  setSearchQuery(e.target.value);
-    // }
-  
     function handleSubmit(searchInput){
       searchInput.preventDefault()
       onSearch(searchQuery)
@@ -16,7 +12,7 @@ const [searchQuery, setSearchQuery] = useState('')
   // what you type in the input has to match the fecth result's .title name 
   //if on submiit/search result is valid, give it w first 8 videos 
   //if its not valid, "no search results found"
-  
+
     return (
       <>
       <form onSubmit={handleSubmit}>

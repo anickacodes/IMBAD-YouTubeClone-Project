@@ -3,14 +3,15 @@ import AboutPage from './components/AboutPage';
 import { Route, Routes } from 'react-router-dom';
 import YouTubeAPIComponent from './components/YouTubeAPIComponent';
 import Home from './components/Home';
+import Header from './components/Header';
 
 function App() {
 	return (
 		<>
 			{/* add to all pages */}
-			
+			{/* <Header /> */}
       <Routes>
-        <Route path="/home" element={ <Home />} />
+        <Route path="/" element={ <Home />} />
         <Route path="/AboutPage" element={ <AboutPage />} />
         <Route path="/Videos" element={ <div className="card videos"> <YouTubeAPIComponent /> </div>} />
       

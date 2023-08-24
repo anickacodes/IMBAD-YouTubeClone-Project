@@ -8,7 +8,7 @@ return (
 
 				<NavBar />
 			
-				{/* <h1>IMBAD</h1> */}
+				<h1>IMBAD</h1>
        
                 </>
 )

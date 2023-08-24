@@ -1,10 +1,39 @@
 import { Route, Routes, Link } from "react-router-dom";
 import "./NavBar.css";
 import logo from "../assets/ytlogoglittered-removebg-preview.png";
+import SearchBar from "./SearchBar";
 
 
-const NavBar = () => {
+const NavBar = ( ) => {
+
+
+
+	// function handleSearch(searchQuery) {
+		
+	// 	const API_KEY = `${import.meta.env.VITE_REACT_APP_API_KEY}`;
+		
+	// 	const maxResults = 8;
+	// 	const searchURL = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=${encodeURIComponent(
+	// 	  searchQuery
+	// 	)}&type=video&maxResults=${maxResults}&key=${API_KEY}`;
+	
+	// 	fetch(searchURL)
+	// 	  .then((response) => response.json())
+	// 	  .then((data) => {
+	// 		setVideos(data.items)
+	// 		setVideoToRender(data.items);
+		
+	// 	  })
+	// 	  .catch((error) => {
+	// 		console.error(error);
+	// 	  });
+	//   }
+
+
+
+
   return (
+   
     <div className="container">
       <nav>
         <div id="logo-link">
@@ -94,7 +123,9 @@ const NavBar = () => {
 </div>
 
       </nav>
+      {/* <SearchBar onSearch={handleSearch}  /> */}
     </div>
+    	
   );
 };
 

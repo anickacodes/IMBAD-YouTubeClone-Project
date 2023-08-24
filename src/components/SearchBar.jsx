@@ -2,7 +2,8 @@ import { useState } from "react";
 
 
 const SearchBar = ({onSearch}) => {
-  // console.log({onSearch})
+  console.log({onSearch})
+  
 const [searchQuery, setSearchQuery] = useState('')
 
     function handleSubmit(searchInput){

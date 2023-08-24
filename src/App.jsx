@@ -8,8 +8,7 @@ import Header from './components/Header';
 function App() {
 	return (
 		<>
-			{/* add to all pages */}
-			{/* <Header /> */}
+
       <Routes>
         <Route path="/" element={ <Home />} />
         <Route path="/AboutPage" element={ <AboutPage />} />

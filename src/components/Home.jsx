@@ -1,18 +1,13 @@
-import Header from "./Header"
-import NavBar from "./NavBar"
+import Header from "./Header";
+import NavBar from "./NavBar";
 
 const Home = () => {
+  return (
+    <>
+      <NavBar />
 
-return (
-<>
+      {/* <h1>IMBAD</h1> */}
+    </>
+  );
+};
 
-				<NavBar />
-			
-				<h1>IMBAD</h1>
-       
-                </>
-)
-
-}
-
-export default Home

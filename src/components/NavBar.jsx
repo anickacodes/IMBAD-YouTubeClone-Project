@@ -18,7 +18,7 @@ const NavBar = () => {
           {" "}
           <ul>
             <li className="active">
-              <Link to={"/home"}>Home</Link>
+              <Link to={"/"}>Home</Link>
               {/* should render fresh videos */}
             </li>
             <li className="active">
@@ -32,7 +32,6 @@ const NavBar = () => {
             </li>
           </ul>
         </div>
-      
 
         {/* <Header /> */}
     <div className="header" style={{display: "flex", alignItems:"center", justifyContent:"space-between"}}>
@@ -93,6 +92,7 @@ const NavBar = () => {
         </div>
         
 </div>
+
       </nav>
     </div>
   );

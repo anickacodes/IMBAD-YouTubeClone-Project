@@ -3,7 +3,7 @@ import "./Header.css";
 //comment
 function Header() {
   return (
-    <div className="header d-flex align-items-center justify-content-space-between">
+    <div className="header" style={{display: "flex", alignItems:"center", justifyContent:"space-between"}}>
       <div className="header-left-items d-flex align-items-center mxy-30">
         <div className="menubar">
           <svg
@@ -86,10 +86,10 @@ function Header() {
           </a>
         </div>
       </div>
-      <div className="header-middle-items d-flex align-items-center">
+      <div className="header-middle-items" style={{display:"flex", alignItems:"center"}}>
         <div className="input-box relative">
           <input type="text" className="search-box" placeholder="Search" />
-          <div className="search-box absolute d-flex align-items-center justify-content-center">
+          <div className="search-box" style={{display:"flex" , position:"absolute", alignItems: "center", justifyContent: "center" }}>
             <svg
               viewBox="0 0 24 24"
               preserveAspectRatio="xMidYMid meet"
@@ -106,7 +106,7 @@ function Header() {
             </svg>
           </div>
         </div>
-        <div className="voice-search d-flex align-items-center">
+        <div className="voice-search" style={{display:"flex", alignItems: "center"}}>
           <svg
             viewBox="0 0 24 24"
             preserveAspectRatio="xMidYMid meet"
@@ -140,6 +140,7 @@ function Header() {
             </g>
           </svg>
         </div>
+        
         <div className="youtube-apps">
           <svg
             viewBox="0 0 24 24"

@@ -1,10 +1,7 @@
-import { useState, useEffect } from 'react';
 import './App.css';
-import NavBar from './components/NavBar';
 import AboutPage from './components/AboutPage';
 import { Route, Routes } from 'react-router-dom';
 import YouTubeAPIComponent from './components/YouTubeAPIComponent';
-import SearchBar from './components/SearchBar';
 import Home from './components/Home';
 
 function App() {
@@ -15,7 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={ <Home />} />
         <Route path="/AboutPage" element={ <AboutPage />} />
-        <Route path="/Videos" element={ <YouTubeAPIComponent /> } />
+        <Route path="/Videos" element={ <div className="card videos"> <YouTubeAPIComponent /> </div>} />
       
       </Routes>
 			<div className="card videos">

@@ -14,9 +14,7 @@ function Home() {
 
 	return (
 		<>
-			<header>
-				<NavBar />
-			</header>
+			
 			<SearchBar onSearch={handleSearch} />
 			{searchQuery ? (
 				<SearchList videos={videos} searchQuery={searchQuery} />

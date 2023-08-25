@@ -3,7 +3,9 @@ import '../components/AboutPage.css';
 
 const AboutPage = () => {
 	return (
+   
 		<div>
+   
 			<h1>About the IMBAD Team</h1>
 			<p>
 				<h3><b>IMBAD</b> (I'M BAD)</h3> Are a team of five talented and determined women who are

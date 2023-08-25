@@ -2,10 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 function SearchList({ videos, searchQuery }) {
+
   return (
     <div className="video-list">
       {searchQuery ? (
         videos.map((video) => (
+
           <div className="video-card" key={video.id.videoId}>
             <Link to={`/videos/${video.id.videoId}`}>
               <div>

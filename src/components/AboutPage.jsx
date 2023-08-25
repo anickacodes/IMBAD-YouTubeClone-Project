@@ -33,6 +33,9 @@ const AboutPage = () => {
 				lacus cursus, hendrerit dui ut, imperdiet sem. In velit velit, vulputate
 				a odio nec, fermentum porttitor elit.
 			</p>
+            <a href="https://github.com/iris-beckham">
+        <img src="src/assets/github_logo.png" alt="GitHub" className="github-icon"/>
+      </a>
 			<br></br>
 
 			<div className="image-container">
@@ -42,6 +45,9 @@ const AboutPage = () => {
 					className="profile-image"
 				/>
 			</div>
+
+            
+
 			<h2>MARCIA</h2>
 			<p>
 				Marcia is a driven home-based bakery owner who's passionate about
@@ -50,6 +56,9 @@ const AboutPage = () => {
 				scratch with her desire of learning to code. Marcia enjoys traveling,
 				exploring new cultures, and trying new foods.
 			</p>
+            <a href="https://github.com/marciafoster">
+        <img src="src/assets/github_logo.png" alt="GitHub" className="github-icon"/>
+      </a>
 			<br></br>
 
 			<div className="image-container">
@@ -68,6 +77,9 @@ const AboutPage = () => {
 				friends, and has a passion for all things Halloween. Bethany uses
 				she/they pronouns and speaks English and Spanish fluently.
 			</p>
+            <a href="https://github.com/figgeryboo">
+        <img src="src/assets/github_logo.png" alt="GitHub" className="github-icon"/>
+      </a>
 			<br></br>
 
 			<div className="image-container">
@@ -83,6 +95,9 @@ const AboutPage = () => {
 				whilst navigating the complexities that is the individual human
 				existence.
 			</p>
+            <a href="https://github.com/anickacodes">
+        <img src="src/assets/github_logo.png" alt="GitHub" className="github-icon"/>
+      </a>
 			<br></br>
 
 			<div className="image-container">
@@ -106,6 +121,9 @@ const AboutPage = () => {
 				who can help them achieve their vision. Fluent is English, Ukrainian and
 				English.
 			</p>
+            <a href="https://github.com/Smille007">
+        <img src="src/assets/github_logo.png" alt="GitHub" className="github-icon"/>
+      </a>
 		</div>
 	);
 };

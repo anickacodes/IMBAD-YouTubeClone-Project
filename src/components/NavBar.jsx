@@ -1,12 +1,9 @@
 import { Route, Routes, Link } from "react-router-dom";
 import "./NavBar.css";
 import logo from "../assets/ytlogoglittered-removebg-preview.png";
-import SearchBar from "./SearchBar";
 
 
 const NavBar = ( ) => {
-
-
 
 	// function handleSearch(searchQuery) {
 		
@@ -28,9 +25,6 @@ const NavBar = ( ) => {
 	// 		console.error(error);
 	// 	  });
 	//   }
-
-
-
 
   return (
    

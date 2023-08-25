@@ -1,34 +1,36 @@
 import { useState, useEffect } from 'react';
 
 function YouTubeAPIComponent({ searchQuery }) {
-  const [videos, setVideos] = useState([]);
+	const [videos, setVideos] = useState([]);
 
-  useEffect(() => {
-    const API_KEY = `${import.meta.env.VITE_REACT_APP_API_KEY}`;
-  
-    const API_URL = `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&part=snippet&q=beyonce`
-    // console.log("APIurl", API_URL)
+	useEffect(() => {
+		const fetchVideos = async () => {
+			try {
+				const API_KEY = `${import.meta.env.VITE_REACT_APP_API_KEY}`;
+				const API_URL = `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&part=snippet&q=${searchQuery}&maxResults=8`;
 
-        if (!response.ok) {
-          throw new Error(`HTTP Error: ${response.status} - ${response.statusText}`);
-        }
+				const response = await fetch(API_URL);
+				if (!response.ok) {
+					throw new Error(
+						`HTTP Error: ${response.status} - ${response.statusText}`
+					);
+				}
 
-        const data = await response.json();
-        setVideos(data.items);
-        console.log(data);
-      } catch (error) {
-        console.error('Error fetching data from YouTube API:', error);
-      }
-    };
+				const data = await response.json();
+				setVideos(data.items);
+			} catch (error) {
+				console.error('Error fetching data from YouTube API:', error);
+			}
+		};
 
-    if (searchQuery) {
-      fetchVideos();
-    } else {
-      setVideos([]); 
-    }
-  }, [searchQuery]);
+		if (searchQuery) {
+			fetchVideos();
+		} else {
+			setVideos([]);
+		}
+	}, [searchQuery]);
 
-  return videos;
+	return videos;
 }
 
 export default YouTubeAPIComponent;

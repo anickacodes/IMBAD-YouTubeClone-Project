@@ -21,7 +21,7 @@ function SearchList({ videos, searchQuery }) {
           </div>
         ))
       ) : (
-        <p className="search-prompt">Start by searching for videos!</p>
+        <p className="results">Search Results</p>
       )}
     </div>
   );

@@ -56,7 +56,7 @@ const NavBar = ( ) => {
             </li>
 
             <li className="active">
-              <Link to={"/Videos"}> Videos </Link>
+              <Link to={"/VideoPage"}> Videos </Link>
               {/* should possibly link to show page */}
             </li>
           </ul>

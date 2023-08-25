@@ -5,7 +5,7 @@ import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import YouTubeAPIComponent from './components/YouTubeAPIComponent';
 import NavBar from './components/NavBar';
-import SearchList from './components/SearchList';
+// import ShowVideos from './components/ShowVideos';
 
 function App() {
 
@@ -15,7 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />  
         <Route path="/AboutPage" element={<AboutPage />} />
-        {/* <Route path="/VideoPage" element={<SearchList />} /> trying to render videos */}
+        {/* <Route path="/Videos/:videoId" element={<ShowVideos />} />  */}
       </Routes>
     </Router>
 	);

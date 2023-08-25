@@ -4,7 +4,7 @@ import '../components/AboutPage.css';
 const AboutPage = () => {
 	return (
    
-		<div>
+		<div className='about-page'>
    
 			<h1>About the IMBAD Team</h1>
 			<p className="purpose">
@@ -152,7 +152,6 @@ const AboutPage = () => {
 					existence.
 				</p>
 			</div>
-			<br></br>
 
 			<div className="profile-container">
 				<div className="image-container">

@@ -1,17 +1,27 @@
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import NavBar from './NavBar';
+import SearchBar from './SearchBar';
+import SearchList from './SearchList';
+import YouTubeAPIComponent from './YouTubeAPIComponent';
 
+function Home() {
+  const [searchQuery, setSearchQuery] = useState('');
+  const videos = YouTubeAPIComponent({ searchQuery });
 
-export default function Home() {
+  const handleSearch = (searchQuery) => {
+    setSearchQuery(searchQuery);
+  };
 
+  return (
+    <>
+      <header>
+        <NavBar />
+      </header>
+      <SearchBar onSearch={handleSearch} />
+      {searchQuery ? <SearchList videos={videos} /> : null}
+      {!searchQuery && <p className="search-prompt">Your Search Will Be Shown Below.</p>}
+    </>
+  );
+}
 
-
-	return (
-	  <div>
-		<h2>Home</h2>
-		<Link to={'/Videos'}>
-	<input type="text" placeholder="Search Videos Here" /> Search Videos Here
-</Link>
-
-	  </div>
-	);
-  }
+export default Home;

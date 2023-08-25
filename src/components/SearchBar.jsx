@@ -1,39 +1,27 @@
-import { useState } from "react";
+import React, { useState } from 'react';
 
+function SearchBar({ onSearch }) {
+  const [searchQuery, setSearchQuery] = useState('');
 
-const SearchBar = ({onSearch}) => {
-  console.log({onSearch})
-  
-const [searchQuery, setSearchQuery] = useState('')
-
-    function handleSubmit(searchInput){
-      searchInput.preventDefault()
-      onSearch(searchQuery)
-    }
-  // what you type in the input has to match the fecth result's .title name 
-  //if on submiit/search result is valid, give it w first 8 videos 
-  //if its not valid, "no search results found"
-
-    return (
-      <>
-      <form onSubmit={handleSubmit}>
-       
-          <input
-            type="text"
-            name="search-query"
-            id="search-query"
-            onChange={(se) => setSearchQuery(se.target.value)}
-            value={searchQuery}
-          />
-          <button type="submit">
-            🔎🔍
-          </button>
-      
-      </form>
-      <hr />
-      </>
-    );
+  const handleInputChange = (e) => {
+    setSearchQuery(e.target.value);
   };
-  
-  export default SearchBar
-  
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    onSearch(searchQuery);
+  };
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <input
+        type="text"
+        value={searchQuery}
+        onChange={handleInputChange}
+      />
+      <button type="submit">Search</button>
+    </form>
+  );
+}
+
+export default SearchBar;

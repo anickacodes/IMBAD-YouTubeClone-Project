@@ -50,7 +50,7 @@ const NavBar = ( ) => {
             </li>
 
             <li className="active">
-              <Link to={"/ShowVideo"}> Show Videos </Link>
+              <Link to={"/videos"}> Show Videos </Link>
               {/* should possibly link to show page */}
             </li>
           </ul>
@@ -117,7 +117,6 @@ const NavBar = ( ) => {
 </div>
 
       </nav>
-      {/* <SearchBar onSearch={handleSearch}  /> */}
     </div>
     	
   );

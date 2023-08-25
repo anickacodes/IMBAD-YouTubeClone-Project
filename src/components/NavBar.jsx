@@ -50,7 +50,7 @@ const NavBar = ( ) => {
             </li>
 
             <li className="active">
-              <Link to={"/Videos"}> Show Videos </Link>
+              <Link to={"/ShowVideo"}> Show Videos </Link>
               {/* should possibly link to show page */}
             </li>
           </ul>

@@ -1,11 +1,13 @@
 import React from "react";
 
 function ShowVideos({ videos }) {
+  console.log('Received videos:', videos);
+
   if (!videos || !Array.isArray(videos)) {
-    // Return some fallback content or null
+   
     return <p>No videos to display.</p>;
   }
-  
+
   return (
     <div>
       {videos.map((video) => (

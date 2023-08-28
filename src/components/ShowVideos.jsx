@@ -15,14 +15,14 @@ function ShowVideos({ videos }) {
 
   return (
     <div>
-         <iframe
-            title={'video.snippet.title'}
-            width="560"
-            height="315"
-            src={`https://www.youtube.com/embed/${videoId}`}
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
+      <iframe
+        // title={videos.snippet.title}
+        width={window.innerWidth} 
+        height={window.innerHeight}
+        src={`https://www.youtube.com/embed/${videoId}`}
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
 
       {/* {videos.map((video) => (
         <div key={video.id.videoId} className="video-detail">
@@ -40,11 +40,10 @@ function ShowVideos({ videos }) {
 
 export default ShowVideos;
 
+// Possible Approaches to getting individual video object
 
-// Possible Approaches to getting individual video object 
+//onclick - in app (maybe) - a function from app connects to useNav to pass the object into the video show page
 
-//onclick - in app (maybe) - a function from app connects to useNav to pass the object into the video show page 
+// otherwise, array of searchQuery gets FIND/found by id
 
-// otherwise, array of searchQuery gets FIND/found by id 
-
-// can api send a query for 1 specidfic video -- endpoint accessing by ID 
+// can api send a query for 1 specidfic video -- endpoint accessing by ID

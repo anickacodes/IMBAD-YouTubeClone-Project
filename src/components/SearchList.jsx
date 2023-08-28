@@ -11,7 +11,7 @@ function SearchList({ videos, searchQuery }) {
           <div className="video-card" key={video.id.videoId}>
             <Link to={`/videos/${video.id.videoId || "QFP9HQhgfHk"}`}>
               {" "}
-              //If key videoId does not exist, short circuit to generic videoId.
+              {/* If key videoId does not exist, short circuit to generic videoId. */}
               <div>
                 <img
                   className="listCard"
